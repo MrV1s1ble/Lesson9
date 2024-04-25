@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     static double a = 0;
     static double b = 0;
@@ -7,30 +9,29 @@ public class Main {
         a = inputDouble();
         b = inputDouble();
 
-        sum();      //Метод суммирования чисел
-        multiply(); //Метод умножения чисел
-        diff();     //Метод вычитания чисел
-        divide();   //Метод деления чисел
+        System.out.println(sum());      //Метод суммирования чисел
+        System.out.println(multiply()); //Метод умножения чисел
+        System.out.println(diff());     //Метод вычитания чисел
+        System.out.println(divide());   //Метод деления чисел
     }
 
-    private static void divide() {
-        //todo дописать логику и печать результата
+    private static double divide() {
+        return a / b;
     }
 
-    private static void diff() {
-        //todo дописать логику и печать результата
+    private static double diff() {
+        return a - b;
     }
 
-    private static void multiply() {
-        //todo дописать логику и печать результата
+    private static double multiply() {
+        return a * b;
     }
 
-    private static void sum() {
-        //todo дописать логику и печать результата
+    private static double sum() {
+        return a + b;
     }
 
     private static double inputDouble() {
-        //todo дописать логику
-        return 0;
+        return new Scanner(System.in).nextDouble();
     }
 }
