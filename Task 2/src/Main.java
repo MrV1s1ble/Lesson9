@@ -15,8 +15,7 @@ public class Main {
     }
 
     private static int inputNumber() {
-        int a = new Scanner(System.in).nextInt();
-        return a;
+        return new Scanner(System.in).nextInt();
     }
     private static void evenNumber(int number) {
         if (number % 2 == 0) {
