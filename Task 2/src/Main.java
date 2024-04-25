@@ -18,10 +18,6 @@ public class Main {
         return new Scanner(System.in).nextInt();
     }
     private static void evenNumber(int number) {
-        if (number % 2 == 0) {
-            System.out.println("Ваше число четное.");
-        } else {
-            System.out.println("Ваше число нечетное.");
-        }
+        System.out.println(number % 2 == 0 ? "Ваше число четное." : "Ваше число нечетное.");
     }
 }
